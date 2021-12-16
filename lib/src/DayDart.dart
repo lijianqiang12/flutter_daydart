@@ -277,7 +277,7 @@ class DayDart {
   /**
    * 操作时间-增加
    */
-  DayDart? add(int num, Units unit) {
+  DayDart add(int num, Units unit) {
     int y = year();
     int m = month();
     int d = date();
@@ -320,14 +320,14 @@ class DayDart {
       case Units.MS:
         return clone(_date.add(new Duration(milliseconds: num)));
       default:
-        return null;
+        return clone(new DateTime(y, m, d, h, min, s, ms));
     }
   }
 
   /**
    * 操作时间-减少
    */
-  DayDart? subtract(int num, Units unit) {
+  DayDart subtract(int num, Units unit) {
     int y = year();
     int m = month();
     int d = date();
@@ -374,7 +374,7 @@ class DayDart {
       case Units.MS:
         return clone(_date.subtract(new Duration(milliseconds: num)));
       default:
-        return null;
+        return clone(new DateTime(y, m, d, h, min, s, ms));
     }
   }
 }
