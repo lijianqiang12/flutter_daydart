@@ -4,7 +4,7 @@ version: 0.0.4
 homepage: https://github.com/lijianqiang12/flutter_daydart
 repository: https://github.com/lijianqiang12/flutter_daydart
 environment:
-  sdk: ">=2.14.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
